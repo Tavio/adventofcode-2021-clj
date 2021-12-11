@@ -1,0 +1,361 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉advent-of-code-2021-clj.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉advent-of-code-2021-clj.core꞉> 
+#'advent-of-code-2021-clj.core/-main
+clj꞉advent-of-code-2021-clj.core꞉> 
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/scores
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/complements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/openingCharacters
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/findCorruptedCharacter
+clj꞉advent-of-code-2021-clj.day10꞉> 
+315693
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day10.txt (No such file or directory)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (NullPointerException) at advent-of-code-2021-clj.day10/eval5795 (form-init9635181974075168994.clj:33).
+; Cannot invoke "java.net.URL.getFile()" because the return value of "clojure.lang.IFn.invoke(Object)" is null
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; day10.txt (No such file or directory)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error compiling at (src/advent_of_code_2021_clj/day10.clj:33:30).
+; No such namespace: io
+clj꞉advent-of-code-2021-clj.day10꞉> 
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+315693
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part1
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error compiling at (src/advent_of_code_2021_clj/day10.clj:39:1).
+; Unable to resolve symbol: part in this context
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ClassCastException) at advent-of-code-2021-clj.day10/eval7555 (form-init9635181974075168994.clj:39).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉advent-of-code-2021-clj.day10꞉> 
+315693
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\( \[)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ClassCastException) at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:56).
+; class clojure.lang.Cons cannot be cast to class clojure.lang.IFn (clojure.lang.Cons and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉advent-of-code-2021-clj.day10꞉> 
+advent-of-code-2021-clj.day10/getComplements (form-init9635181974075168994.clj:56)
+clojure.core.protocols/fn (protocols.clj:153)
+clojure.core.protocols/fn (protocols.clj:124)
+clojure.core.protocols/fn (protocols.clj:19)
+clojure.core.protocols/seq-reduce (protocols.clj:31)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/reduce (core.clj:6830)
+clojure.core/reduce (core.clj:6812)
+advent-of-code-2021-clj.day10/getComplements (form-init9635181974075168994.clj:48)
+advent-of-code-2021-clj.day10/getComplements (form-init9635181974075168994.clj:46)
+advent-of-code-2021-clj.day10/eval7568 (form-init9635181974075168994.clj:61)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:833)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:54).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/eval7575$getComplements$fn (form-init9635181974075168994.clj:56).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (NullPointerException) at advent-of-code-2021-clj.day10/eval7575$getComplements$fn (form-init9635181974075168994.clj:57).
+; Cannot invoke "clojure.lang.IFn.invoke()" because "restStack" is null
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\[)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (NullPointerException) at advent-of-code-2021-clj.day10/eval7575$getComplements$fn (form-init9635181974075168994.clj:57).
+; Cannot invoke "clojure.lang.IFn.invoke()" because "restStack" is null
+clj꞉advent-of-code-2021-clj.day10꞉> 
+nil
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\[)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\( \[)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error reading source at (REPL:17:1).
+; EOF while reading, starting at line 16
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/complements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\) \])
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error compiling at (src/advent_of_code_2021_clj/day10.clj:76:40).
+; Unable to resolve symbol: complementScores in this context
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/complementScores
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplementScore
+clj꞉advent-of-code-2021-clj.day10꞉> 
+7
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/complementScores
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (NullPointerException) at advent-of-code-2021-clj.day10/getComplementScore$fn (form-init9635181974075168994.clj:76).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉advent-of-code-2021-clj.day10꞉> 
+clojure.lang.Numbers/ops (Numbers.java:1068)
+clojure.lang.Numbers/add (Numbers.java:153)
+advent-of-code-2021-clj.day10/getComplementScore (form-init9635181974075168994.clj:76)
+clojure.core.protocols/fn (protocols.clj:168)
+clojure.core.protocols/fn (protocols.clj:124)
+clojure.core.protocols/fn (protocols.clj:19)
+clojure.core.protocols/seq-reduce (protocols.clj:31)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/reduce (core.clj:6830)
+clojure.core/reduce (core.clj:6812)
+advent-of-code-2021-clj.day10/getComplementScore (form-init9635181974075168994.clj:76)
+advent-of-code-2021-clj.day10/getComplementScore (form-init9635181974075168994.clj:74)
+advent-of-code-2021-clj.day10/eval7627 (form-init9635181974075168994.clj:79)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:833)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\) \])
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/complementScores
+clj꞉advent-of-code-2021-clj.day10꞉> 
+7
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\) \])
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:60).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (src/advent_of_code_2021_clj/day10.clj:84:15).
+; Bad binding form, expected symbol, got: null
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:60).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error compiling at (src/advent_of_code_2021_clj/day10.clj:66:27).
+; Expecting var, but Exception is mapped to class java.lang.Exception
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplements
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (src/advent_of_code_2021_clj/day10.clj:84:15).
+; Bad binding form, expected symbol, got: (identity 0)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:65).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:65).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplements$fn (form-init9635181974075168994.clj:65).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/getComplement
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplement$fn (form-init9635181974075168994.clj:65).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+7
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(\) \])
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/getComplement]
+clj꞉advent-of-code-2021-clj.day10꞉> 
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error at advent-of-code-2021-clj.day10/getComplement$fn (form-init9635181974075168994.clj:65).
+; Parse exception: corrupted line
+clj꞉advent-of-code-2021-clj.day10꞉> 
+42
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Syntax error compiling at (src/advent_of_code_2021_clj/day10.clj:86:20).
+; Unable to resolve symbol: % in this context
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1442693 4652444 4837206 5671594 9101693 9667919 22525947 32138588 45960487 83558307 93261742 126445911 178387047 194088542 415930911 553727922 673039949 1038583431 1041770442 1047537107 1061116799 1118968617 1607394984 1870887234 2118692494 2923421469 3022915368 3288256221 3316120194 4247941869 4846785359 5463648466 5501350963 8242066711 9469425816 11566113311 12049880844 15452948909 16229239124 16321312419 18239952706 21899864816 21950231241 26311839173 26490852849 27171795213 28875764166)
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7714/fn--7715]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ClassCastException) at advent-of-code-2021-clj.day10/fn (form-init9635181974075168994.clj:88).
+; class clojure.lang.ArraySeq cannot be cast to class java.lang.Number (clojure.lang.ArraySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7714/fn--7715]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ClassCastException) at advent-of-code-2021-clj.day10/fn (form-init9635181974075168994.clj:88).
+; class clojure.lang.ArraySeq cannot be cast to class java.lang.Number (clojure.lang.ArraySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7714/fn--7715]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7744/fn--7745]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+(0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1442693 4652444 4837206 5671594 9101693 9667919 22525947 32138588 45960487 83558307 93261742 126445911 178387047 194088542 415930911 553727922 673039949 1038583431 1041770442 1047537107 1061116799 1118968617 1607394984 1870887234 2118692494 2923421469 3022915368 3288256221 3316120194 4247941869 4846785359 5463648466 5501350963 8242066711 9469425816 11566113311 12049880844 15452948909 16229239124 16321312419 18239952706 21899864816 21950231241 26311839173 26490852849 27171795213 28875764166)
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7790/fn--7791]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7802/fn--7803]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+1
+clj꞉advent-of-code-2021-clj.day10꞉> 
+1
+clj꞉advent-of-code-2021-clj.day10꞉> 
+3
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (IndexOutOfBoundsException) at advent-of-code-2021-clj.day10/eval7816 (form-init9635181974075168994.clj:89).
+; null
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ClassCastException) at advent-of-code-2021-clj.day10/fn (form-init9635181974075168994.clj:84).
+; class clojure.lang.ArraySeq cannot be cast to class java.lang.Number (clojure.lang.ArraySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ArityException) at advent-of-code-2021-clj.day10/fn (form-init9635181974075168994.clj:85).
+; Wrong number of args (1) passed to: clojure.core/nth
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ArityException) at advent-of-code-2021-clj.day10/fn (form-init9635181974075168994.clj:85).
+; Wrong number of args (21) passed to: advent-of-code-2021-clj.day10/fn--7836/fn--7837
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7802/fn--7803]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#function[advent-of-code-2021-clj.day10/fn--7848/fn--7849]
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+; Execution error (ArityException) at advent-of-code-2021-clj.day10/fn (form-init9635181974075168994.clj:81).
+; Wrong number of args (1) passed to: clojure.core/nth
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+0
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+0
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+0
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+0
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+194088542
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+1442693
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+288957
+clj꞉advent-of-code-2021-clj.day10꞉> 
+1480781
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+0
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+1442693
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+0
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
+true
+clj꞉advent-of-code-2021-clj.day10꞉> 
+false
+clj꞉advent-of-code-2021-clj.day10꞉> 
+#'advent-of-code-2021-clj.day10/part2
+clj꞉advent-of-code-2021-clj.day10꞉> 
+1870887234
+nil
+clj꞉advent-of-code-2021-clj.day10꞉> 
