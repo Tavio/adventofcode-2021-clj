@@ -35,9 +35,8 @@
     (->> (line-seq rdr)
          (parseCaves)
          (findPaths [:start] :start)
-         (count))))
-
-(println part1)
+         (count)
+         (println))))
 
 (defn notStartNorEnd
   [cave]
@@ -46,24 +45,22 @@
 (defn findPathsPart2
   [currentPath currentCave hasRepeated cache caves]
   (if (= currentCave :end)
-    '(currentPath)
+    1
     (let [neighbours (currentCave caves)]
       (reduce (fn [nextPaths neighbour]
                 (if (or (isBig neighbour) (not (some #{neighbour} currentPath)))
-                  (concat (findPathsPart2 (cons neighbour currentPath) neighbour hasRepeated cache caves) nextPaths)
+                  (+ (findPathsPart2 (cons neighbour currentPath) neighbour hasRepeated cache caves) nextPaths)
                   (if (and (some #{neighbour} currentPath)
                            (not (isBig neighbour))
                            (not hasRepeated)
                            (notStartNorEnd neighbour))
-                    (concat (findPathsPart2 (cons neighbour currentPath) neighbour true cache caves) nextPaths)
+                    (+ (findPathsPart2 (cons neighbour currentPath) neighbour true cache caves) nextPaths)
                     nextPaths)))
-              [] neighbours))))
+              0 neighbours))))
 
 (def part2
   (with-open [rdr (io/reader (str (io/resource "day12.txt")))]
     (->> (line-seq rdr)
          (parseCaves)
          (findPathsPart2 '(:start) :start false {})
-         (count))))
-
-(println part2)
+         (println))))
