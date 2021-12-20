@@ -1,8 +1,8 @@
 (ns advent-of-code-2021-clj.core
-  (:require [advent-of-code-2021-clj.day18 :as day18])
+  (:require [advent-of-code-2021-clj.day19 :as day19])
   (:gen-class))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (day18/part2))
+  (println (day19/part2)))
